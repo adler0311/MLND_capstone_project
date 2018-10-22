@@ -4,16 +4,6 @@
     <list default="true" id="bcc7e4a7-227b-4c0b-be60-36fe752e823f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MLND_capstone_actual.md" beforeDir="false" afterPath="$PROJECT_DIR$/MLND_capstone_actual.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/amzn_dataset.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/img/amzn_dataset.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/amzn_test_plot.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/img/amzn_test_plot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/co_test_plot.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/img/co_test_plot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/denormalization_equation.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/img/denormalization_equation.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/dis_test_plot.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/img/dis_test_plot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/model_shape.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/img/model_shape.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/mse.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/img/mse.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/msft_test_plot.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/img/msft_test_plot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/no_stateful_short_time_step_dis_test_plot.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/img/no_stateful_short_time_step_dis_test_plot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/normalization_equation.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/img/normalization_equation.png" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,13 +31,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="PNG" value="11" />
+          <entry key="PNG" value="12" />
           <entry key="gitignore" value="2" />
           <entry key="html" value="4" />
           <entry key="iml" value="1" />
           <entry key="ipynb" value="1" />
           <entry key="md" value="3" />
-          <entry key="png" value="12" />
+          <entry key="png" value="16" />
           <entry key="py" value="4" />
         </counts>
       </usages-collector>
@@ -56,7 +46,7 @@
           <entry key="HTML" value="4" />
           <entry key="IDEA_MODULE" value="1" />
           <entry key="IPNB" value="1" />
-          <entry key="Image" value="23" />
+          <entry key="Image" value="28" />
           <entry key="Markdown" value="3" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="Python" value="4" />
@@ -66,14 +56,14 @@
         <counts>
           <entry key="gitignore" value="8" />
           <entry key="html" value="501" />
-          <entry key="md" value="25876" />
+          <entry key="md" value="25893" />
           <entry key="py" value="1633" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="501" />
-          <entry key="Markdown" value="25876" />
+          <entry key="Markdown" value="25893" />
           <entry key="PLAIN_TEXT" value="8" />
           <entry key="Python" value="1633" />
         </counts>
@@ -133,12 +123,37 @@
         <entry file="file://$PROJECT_DIR$/MLND_capstone_actual.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="171">
-                <caret line="55" column="35" lean-forward="true" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="35" />
+              <first_editor relative-caret-position="207">
+                <caret line="67" column="86" selection-start-line="67" selection-start-column="86" selection-end-line="67" selection-end-column="86" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/img/denormalization_equation.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/img/dis_test_plot.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/img/model_shape.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/img/normalization_equation.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/img/amzn_dataset.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -235,7 +250,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540224461534" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540224733978" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../stocker" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -328,18 +343,18 @@
       <workItem from="1539864271969" duration="9224000" />
       <workItem from="1539998772183" duration="4336000" />
       <workItem from="1540036720485" duration="5040000" />
-      <workItem from="1540122126005" duration="25436000" />
+      <workItem from="1540122126005" duration="25708000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46933000" />
+    <option name="totallyTimeSpent" value="47205000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49914238" visible="true" weight="0.13431877" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49914238" visible="true" weight="0.13431877" />
       <window_info id="Structure" order="1" sideWeight="0.50085765" side_tool="true" weight="0.13431877" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -348,7 +363,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.21322536" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.21322536" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -424,16 +439,10 @@
     <entry file="file://$PROJECT_DIR$/img/amzn_test_plot.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/img/amzn_dataset.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/img/amzn_stock_price.PNG">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/img/mse.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/normalization_equation.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/pyplot/test.png">
@@ -494,11 +503,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/img/dis_test_plot.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/model_shape.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/normalization_equation.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/amzn_dataset.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/denormalization_equation.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/MLND_capstone_actual.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="171">
-            <caret line="55" column="35" lean-forward="true" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="35" />
+          <first_editor relative-caret-position="207">
+            <caret line="67" column="86" selection-start-line="67" selection-start-column="86" selection-end-line="67" selection-end-column="86" />
           </first_editor>
           <second_editor />
         </state>

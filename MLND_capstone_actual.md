@@ -58,7 +58,7 @@ the time before the next day's open
 
 ### Exploratory Visualization
 
-![amzn stock dataset image](https://raw.githubusercontent.com/adler0311/MLND_capstone_project/master/img/amzn_stock_price.png)
+![amzn stock dataset image](https://raw.githubusercontent.com/adler0311/MLND_capstone_project/master/img/amzn_dataset.png)
 
 Here is the stock price of the AMZN. The stock price has been increased since 1997. For the model to be fitted more accurately,
 the data has to be normalized. But the data has no lower bound and upper bound. So normalization for the whole dataset
@@ -149,7 +149,7 @@ The reason I have done this is similar to the action of increasing window size. 
 the increase, the model, would find the patterns much more comfortable.
  
 After doing this, the LSTM model results like this:
-![final result image](https://raw.githubusercontent.com/adler0311/MLND_capstone_project/master/img/final_dis_test_plot.png)
+![final result image](https://raw.githubusercontent.com/adler0311/MLND_capstone_project/master/img/final_dis_test_plot.PNG)
 Also, here is the stock prediction for rest of the company which is Amazon, Microsoft, and Coca-Cola.
 
 ![amzn test plot image](https://raw.githubusercontent.com/adler0311/MLND_capstone_project/master/img/amzn_test_plot.png)
