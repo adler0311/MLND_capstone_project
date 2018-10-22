@@ -33,7 +33,7 @@ So the metrics are related to how close the predicted value to the actual value.
 So I use the 'mse' or mean squared error for
 metrics. Here's the definition of the MSE
 
-![MSE image](https://raw.githubusercontent.com/adler0311/MLND_capstone_project/master/img/mse.PNG)
+![MSE image](https://raw.githubusercontent.com/adler0311/MLND_capstone_project/master/img/mse.png)
 https://en.wikipedia.org/wiki/Mean_squared_error
 
 
