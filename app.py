@@ -41,7 +41,7 @@ def predict():
     ticker = request.form['companySelect']
     print(ticker)
     stock = getStockDataForPrediction(ticker=ticker)
-    model = load_model('./saved_model/{}_lstm_model.h5'.format(ticker))
+    model = load_model('./saved_model/{}_lstm_model_final.h5'.format(ticker))
 
     seq_out = []
     seq_in = np.array(stock[-WINDOW_SIZE:])[:, [1]].tolist()
