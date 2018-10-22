@@ -32,7 +32,7 @@ The model have to predict the specific value which means the model is regression
 related to how close the predicted value to the actual value. So I use the 'mse' or mean squared error for
 metrics. Here's the definition of the MSE
 
-![MSE image](img/mse.png?raw=true)
+![MSE image](https://raw.githubusercontent.com/adler0311/MLND_capstone_project/master/img/mse.PNG)
 https://en.wikipedia.org/wiki/Mean_squared_error
 
 
