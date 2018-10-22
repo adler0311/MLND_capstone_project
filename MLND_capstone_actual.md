@@ -87,3 +87,131 @@ see below, the Linear Regression model seems much more accurate than the LSTM mo
 ## III. Methodology
 
 ### Data Preprocessing
+
+The preprocessing consist of following steps:
+1. take data correspond to the input ticker from quandl api
+2. confine the data from step 1 starting from 4 years from last date of the data.
+3. pick up columns which is used to feature data.
+4. split the data from step 3 into train set, validation set, and test set. At this time, each dataset should be 
+saved in the form of 3D array consist of sequence, time step, and features. Because the LSTM model has one 
+epochs with time step. ?? 
+5. each sequence has to be normalized for better performance. The normalization is proceed by using this equation.
+![MSE image](./img/normalization_equation.png)
+Here, P0 is the first value of the each sequences and the Pi is the ith value of the sequence.
+The denormalization is going to be proceed when the model predict sequences multiple.  
+
+
+### Implementation
+
+
+The implementation process can be split into two main stages:
+1. The predictor training stage
+2. The application development stage
+
+During the first stage, The predictor was trained on the preprocessed training data. And I used the LSTM model 
+which provided from Kears. The whole process was done by Jupyter notebook, and can be further divided into the 
+following steps:
+1. Define the network architecture and training parameters.
+2. Define also the loss function and optimizer. the loss function is Mean Squared Error as mentioned above, 
+and the optimizer is 'adam'
+3. training the LSTM model with training set. 
+4. make LossHistory class for logging the loss of each epochs when training the model.
+5. Plot the loss values versus epochs with training data.
+6. bound the stock data to validation dataset range and evaluate the evaluation data with trained model.
+7. If the loss is not good enough, return to the step 3 and increase the number of epochs or number of batch size 
+or other parameters used in model.
+8. save the model and store the model at the saved_model directory so that every time the app is used to predict
+future price, the trained model is able to be used without long delay time.
+
+(여기에 LSTM 모델을 그려서 추가하고 설명을 달기.)
+
+The application development process can be split into three main stages:
+1. make /index page. Here, the user input company ticker and days from now that he/she wants to know.
+2. the input data is used in the /predict path. In the /predict path, the application load file which has the 
+information about the trained model and use the recent data of size of the time step, and predict the stock price
+of the future day which the user wants to know.
+3. the predict result is showing from the /predict path with graph. To show the graph, the graph which is made from the 
+step 2 saved as the file in the pyplot directory and there is the api for send the graph image file for showing the 
+predicted graph on the /predict page.
+
+### Refinement
+
+My initial solution was not good. The model seems to predict future prices but it just looks like stock price graph
+Here is my first initial solution.
+(그래프 이미지)
+
+This was improved upon by using the following techniques and proces
+- state 
+after googling to improve my lstm model, I found that the stateful lstml model would have much performance than 
+the model that is not stateful. Here, the stateful means that the lstm model remember the current sample trained state
+and pass the state to the next sample become the initial state of the next sample. So, when using this technique,
+the model would be trained well. The only things to do is change the shape of batch input from (sequence, time step, features)
+ to (1, time step, feature) and set the stateful parameter to 'True' and loop the each training step of LSTM model 
+over sequence size. 
+- increasing window size or each time step of sequence from 50 to 249.
+The 50 number is just a guess. and the 249 is number of days of stock market in a year. And I made a hypothesis that
+if each time step covers the year, then the model would train the pattern much more accurate than just random number.
+- increase the training data to 4 years.
+The reason I done this is similar to the action of increasing window size. I thought that as the training data size 
+increase, the model would find the patterns much more easier.
+ 
+After doing this, the LSTM model results like this:
+(그래프 이미지)
+The future values that the model predicted is not look like actual values but the trend of the stock price is well predicted.
+
+
+## IV. Results
+_(approx. 2-3 pages)_
+
+### Model Evaluation and Validation
+
+During development, a validation set was used to evaluate the model.
+Here is the final architecture and hyperparameters I chosen:
+- The number of epochs: 8
+- The training data : 4years (250*4 = 1000)
+- The window size or time step: 249
+- The features: 'Adj. Closing'
+- The layers: one lstm layer with stateful, 128 memory cell and one dense layer. 
+- The user input ticker is restricted to the given company ticker ['AMZN', 'MSFT', 'DIS', 'KO']
+- Likewise, the future days of user input is restricted to the 100 days from now.
+
+
+### Justification
+
+The LSTM model and the benchmark model has difference. First, the LSTM model predict rather exact stock price than
+trend of the future price. The benchmark model was Linear Regression model. The model seems like more actual stock price.
+But, the absolute value of prediction price is far from the previous prices. I think the reason is that the stock prices
+keep going up and the training set was same as the LSTM model so the benchmark model trained far from the current price.
+So the predicted values was lower than current price but actually similar range from the past year data. 
+The LSTM model is not very close to the actual price on the test set but if the model is supplemented such as adding 
+special feature for training, the model prediction would be near perfection.
+
+
+## V. Conclusion
+_(approx. 1-2 pages)_
+
+### Free-Form Visualization
+
+(여기에는 최종 그래프를 보여주면 될 거 같다.)
+Here is the stock predictions for the five company which is Amazon, Microsoft, Berkshire Hathaway, Disney, and Coca-Cola.
+The plot shows past prices and both LSTM prediction prices and the benchmark prediction prices.
+
+### Reflection
+
+First of all, the stock market prediction field keeps in my head while learning the machine learning. That much, the stock 
+market prediction is very fascinating domain for me. But, it was very tough way for me that I didn't learn about the 
+LSTM in the machine learning nanodegree program. Since the stock prediction is hard for using simple model such as
+Linear Regression, SVM, or just neural network that I learned from the lectures, I try to choose well known model for 
+time series prediction which is LSTM model. Though I did not learn the LSTM model from the nanodegree program, I have to
+spend most of the time researching the concept of the model, how to implement, etc. while doing my capstone project.
+That was not a good idea because the time was ticking and I rarely have time for finding more suitable hyperparameters,
+features, etc. The problem was very challenging but It was also very proud that 
+I implemented the model that predict what I want to see. But there has left many things to improve.
+
+### Improvement
+
+To achieve more accurate model, it would be good to add or experiment below features:
+- follow the change point of the given dataset. The change point matters because it show the trend of the stock prices
+- try to use more feature to train the model. 
+- do the sentimental analysis about the company that the user want to predict price on and assist this result to 
+predict stock price.

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Flask!</title>
+</head>
+<body>
+    <div class="container">
+        <form method='post' action="{{ url_for('predict') }}">
+
+            <h1>CHOOSE THE COMPANY</h1>
+            <select name="companySelect">
+                <option value="AMZN">AMAZON</option>
+                <option value="MSFT">MICROSOFT</option>
+                <option value="DIS">DISNEY</option>
+                <option value="KO">COCA COLA</option>
+            </select>
+            <h1>INPUT THE FUTURE DAY TO PREDICT FROM TODAY</h1>
+            <input type="text" name="futureDay">
+            <button type="submit" class="btn btn-primary">
+                Predict
+            </button>
+        </form>
+    </div>
+</body>
+</html>

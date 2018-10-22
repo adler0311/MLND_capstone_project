@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+</head>
+<body>
+    <img src="{{ url_for('getFigure', ticker=ticker, future_days=future_days) }}" alt="AMZN" height="300">
+    <h1>my prediction is : {{prediction}}</h1>
+
+</body>
+</html>
