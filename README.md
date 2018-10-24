@@ -1,6 +1,10 @@
 # MLND-Capstone
 My capstone project for Udacity's Machine Learning Nanodegree
 
+Please see my final Capstone Project Report [here](https://github.com/adler0311/MLND_capstone_project/blob/master/MLND_capstone_report.pdf).
+
+Also, see my original capstone proposal [here](https://github.com/adler0311/MLND_capstone_project/blob/master/proposal.pdf).
+
 #### dataset
 If you want the data, just use quandl API. check [here](https://www.quandl.com/tools/api)
 
