@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bcc7e4a7-227b-4c0b-be60-36fe752e823f" name="Default Changelist" comment="modify readme, add capstone proposal file">
-      <change afterPath="$PROJECT_DIR$/proposal.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MLND_capstone_actual.md" beforeDir="false" afterPath="$PROJECT_DIR$/MLND_capstone_report.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/capstone_report.md" beforeDir="false" />
-    </list>
+    <list default="true" id="bcc7e4a7-227b-4c0b-be60-36fe752e823f" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +17,7 @@
     <session id="1988837976">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.33" value="1" />
@@ -223,7 +217,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540303868960" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540303982909" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../stocker" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -318,16 +312,23 @@
       <workItem from="1539998772183" duration="4336000" />
       <workItem from="1540036720485" duration="5040000" />
       <workItem from="1540122126005" duration="25917000" />
-      <workItem from="1540303334418" duration="527000" />
+      <workItem from="1540303334418" duration="743000" />
     </task>
+    <task id="LOCAL-00001" summary="modify readme, add capstone proposal file">
+      <created>1540303876728</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1540303876728</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47941000" />
+    <option name="totallyTimeSpent" value="48157000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49914238" visible="true" weight="0.13560411" />
       <window_info id="Structure" order="1" sideWeight="0.50085765" side_tool="true" weight="0.13431877" />
@@ -364,6 +365,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="modify readme, add capstone proposal file" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify readme, add capstone proposal file" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/Anaconda3/envs/stan_env/Lib/site-packages/flask/helpers.py">
